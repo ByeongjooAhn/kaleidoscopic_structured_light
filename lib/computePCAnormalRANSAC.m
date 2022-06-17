@@ -39,5 +39,5 @@ end
 function dist = distPlane(normal, points_neighbor)
     nx = points_neighbor*normal';
     d = mean(nx);
-    dist = nx - d;
+    dist = abs(nx - d);
 end
